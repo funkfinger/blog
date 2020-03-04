@@ -1,19 +1,22 @@
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 
-import Layout from './Layout';
+import Seo from './Seo';
 
 const testComponent = (
   <HelmetProvider>
-    <Layout>
-      <p>hi</p>
-    </Layout>
+    <Seo />
   </HelmetProvider>
 );
 
-test('it renders children', () => {
-  const { getByText } = render(testComponent);
-  expect(getByText(/hi/i)).toBeInTheDocument();
+test('it can set the title with props', async () => {
+  render(
+    <HelmetProvider>
+      <Seo pageTitle="blah" />
+    </HelmetProvider>
+  );
+  await waitForDomChange();
+  expect(document.title).toEqual('blah | site title...');
 });
 
 test('it sets a title from useSeo query', async () => {
