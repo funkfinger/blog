@@ -4,4 +4,6 @@ title: New Year, New Blog
 heroImage: '../../../../../images/2020.png'
 ---
 
+post excerpt
+
 <YouTubeVideo id="kjQ7Axuyp_M" />
