@@ -9,10 +9,12 @@ import Gist from 'react-gist';
 
 import Layout from './src/components/Layout/Layout';
 import CodeHighlighter from './src/components/CodeHighlighter/CodeHighlighter';
+import YouTubeVideo from './src/components/YouTubeVideo/YouTubeVideo';
 
 const components = {
   code: CodeHighlighter,
   Gist,
+  YouTubeVideo,
 };
 
 export const wrapPageElement = ({ element, props }) => (

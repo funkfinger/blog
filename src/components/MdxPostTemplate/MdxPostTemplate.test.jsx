@@ -3,11 +3,18 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import Gist from 'react-gist';
 
+import YouTubeVideo from '../YouTubeVideo/YouTubeVideo';
+
 import { PageTemplatePure } from './MdxPostTemplate';
-import { mdxPostBySlugQuery, postTestBody } from '../../___test___/fixtures';
+import {
+  mdxPostBySlugQuery,
+  bodyWithYoutube,
+  bodyWithGist,
+} from '../../___test___/fixtures';
 
 const components = {
   Gist,
+  YouTubeVideo,
 };
 
 const {
@@ -16,8 +23,6 @@ const {
     body,
   },
 } = mdxPostBySlugQuery;
-
-const postBody = postTestBody.body;
 
 const testComponent = (
   <PageTemplatePure
@@ -28,10 +33,20 @@ const testComponent = (
   />
 );
 
+test('post can have youtube video', () => {
+  const { container } = render(
+    <MDXProvider components={components}>
+      <MDXRenderer>{bodyWithYoutube}</MDXRenderer>
+    </MDXProvider>
+  );
+  // console.log(container.querySelector('#kjQ7Axuyp_M'));
+  expect(container.querySelector('#kjQ7Axuyp_M')).toBeInTheDocument();
+});
+
 test('post can have gist', () => {
   const { container } = render(
     <MDXProvider components={components}>
-      <MDXRenderer>{postBody}</MDXRenderer>
+      <MDXRenderer>{bodyWithGist}</MDXRenderer>
     </MDXProvider>
   );
   const iframe = container.querySelector('#gist-351738');

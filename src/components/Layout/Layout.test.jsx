@@ -11,6 +11,11 @@ const testComponent = (
   </HelmetProvider>
 );
 
+test('it has a header', () => {
+  const { getByText } = render(testComponent);
+  expect(getByText(/jay, trying to remember/i)).toBeInTheDocument();
+});
+
 test('it renders children', () => {
   const { getByText } = render(testComponent);
   expect(getByText(/hi/i)).toBeInTheDocument();
