@@ -10,7 +10,11 @@ const IndexPage = () => {
   const data = useAllPosts();
   const postArray = data.allPostsQuery.edges;
   const posts = postArray.map(({ node }) => (
-    <PostExcerpt key={node.fields.slug} title={node.frontmatter.title}>
+    <PostExcerpt
+      key={node.fields.slug}
+      title={node.frontmatter.title}
+      img={node.frontmatter.heroImage}
+    >
       {node.excerpt}
     </PostExcerpt>
   ));

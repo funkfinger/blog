@@ -11,6 +11,11 @@ const testComponent = (
   </HelmetProvider>
 );
 
+test('it renders footer', () => {
+  const { getByText } = render(testComponent);
+  expect(getByText(/waived all copyright/i)).toBeInTheDocument();
+});
+
 test('it has a header', () => {
   const { getByText } = render(testComponent);
   expect(getByText(/jay, trying to remember/i)).toBeInTheDocument();
@@ -18,7 +23,7 @@ test('it has a header', () => {
 
 test('it renders children', () => {
   const { getByText } = render(testComponent);
-  expect(getByText(/hi/i)).toBeInTheDocument();
+  expect(getByText('hi')).toBeInTheDocument();
 });
 
 test('it sets a title from useSeo query', async () => {

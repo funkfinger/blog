@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Seo from '../Seo/Seo';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 import useSeo from '../../data/useSeo';
 
@@ -13,7 +14,8 @@ const Layout = ({ children, title }) => {
     <div className="layout">
       <Seo title={t} />
       <Header />
-      {children}
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 };

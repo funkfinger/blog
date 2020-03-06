@@ -1,7 +1,6 @@
 ---
 title: 'Test Post 3'
 date: 2020-02-10 22:13:39
-heroImage: ../images/web-hero.png
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio tortor, lobortis nec venenatis et, finibus id tortor. Suspendisse sodales quam nec felis elementum scelerisque. Aenean non hendrerit lorem. Proin blandit nulla ex, eu ultrices dui mattis vel. Suspendisse eget volutpat ipsum, et malesuada nibh. Nam turpis diam, eleifend ut consequat in, eleifend quis lacus. Nulla imperdiet congue neque in rhoncus. Fusce luctus nisi in ipsum sagittis, eget aliquam massa pretium. Pellentesque nibh nunc, eleifend quis tempor ac, vestibulum ut ipsum. Duis ac sapien ipsum. Mauris ut justo nec libero tristique euismod in nec orci. Maecenas in leo ornare, mattis nisl in, aliquet tortor. Suspendisse potenti.

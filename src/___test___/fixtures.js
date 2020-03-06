@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 
-const heroImageFluid = {
+export const heroImageFluid = {
   aspectRatio: 3.3333333333333335,
   base64: 'data:image/png;base64,',
   sizes: '(max-width: 840px) 100vw, 840px',
