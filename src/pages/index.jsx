@@ -13,6 +13,7 @@ const IndexPage = () => {
     <PostExcerpt
       key={node.fields.slug}
       title={node.frontmatter.title}
+      slug={node.fields.slug}
       img={node.frontmatter.heroImage}
     >
       {node.excerpt}

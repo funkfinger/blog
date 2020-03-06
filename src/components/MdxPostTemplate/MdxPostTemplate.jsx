@@ -1,20 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+
+import HeroImage from '../HeroImage/HeroImage';
 
 export const PageTemplatePure = ({ heroImage, title, date, body }) => {
   const img = heroImage ? (
-    <Img fluid={heroImage.childImageSharp.fluid} />
-  ) : (
-    <div className="hero-image-holder" />
-  );
+    <HeroImage img={heroImage.childImageSharp.fluid} />
+  ) : null;
   return (
     <div>
       {img}
-      <h1>{title}</h1>
-      <h2>{date}</h2>
+      <h3>{title}</h3>
+      <div className="post-date">{date}</div>
       <MDXRenderer>{body}</MDXRenderer>
     </div>
   );

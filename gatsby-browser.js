@@ -11,6 +11,8 @@ import Layout from './src/components/Layout/Layout';
 import CodeHighlighter from './src/components/CodeHighlighter/CodeHighlighter';
 import YouTubeVideo from './src/components/YouTubeVideo/YouTubeVideo';
 
+import './src/style/main.scss';
+
 const components = {
   code: CodeHighlighter,
   Gist,

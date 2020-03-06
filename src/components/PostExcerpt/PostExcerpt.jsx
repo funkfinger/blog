@@ -1,20 +1,25 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import HeroImage from '../HeroImage/HeroImage';
 
-const PostExcerpt = ({ title, children, img }) => {
+const PostExcerpt = ({ title, children, img, slug }) => {
   const i = img ? <HeroImage img={img.childImageSharp.fluid} /> : null;
   return (
     <div className="post-excerpt">
-      {i}
-      <h3>{title}</h3>
-      <div>{children}</div>
+      <Link to={slug}>
+        {i}
+        <h3>{title}</h3>
+        <div>{children}</div>
+        <div className="more-link">more...</div>
+      </Link>
     </div>
   );
 };
 
 PostExcerpt.propTypes = {
+  slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   img: PropTypes.shape({

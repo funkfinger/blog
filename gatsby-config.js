@@ -9,6 +9,7 @@ module.exports = {
     keywords: ['code', 'electronics', 'tinker'],
   },
   plugins: [
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
