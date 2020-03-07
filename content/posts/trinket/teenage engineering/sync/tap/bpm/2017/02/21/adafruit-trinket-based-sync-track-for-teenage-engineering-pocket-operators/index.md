@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2017/02/21/adafruit-trinket-based-sync-track-for-teenage-engineering-pocket-operators/'" />

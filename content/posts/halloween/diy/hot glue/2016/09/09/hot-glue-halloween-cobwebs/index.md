@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2016/09/09/hot-glue-halloween-cobwebs/'" />

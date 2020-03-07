@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2015/09/03/setting-my-attiny-fuses-to-mimic-the-adafruit-trinket/'" />

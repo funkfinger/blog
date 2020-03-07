@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2016/04/18/mostly-no-arduino-attiny-ic-lcd/'" />

@@ -48,7 +48,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   result.data.mdxPageBuilderQuery.edges.forEach(({ node, next, previous }) => {
     createPage({
-      path: node.fields.slug,
+      path: node.fields ? node.fields.slug : null,
       component: MdxPostTemplate,
       context: {
         slug: node.fields.slug,

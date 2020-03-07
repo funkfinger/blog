@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2016/03/09/display-raspberry-pi-webcam-video-to-screen/'" />

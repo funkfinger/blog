@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2015/09/30/es8266--dht22-wi-fi--temperature--humidity-server-example-mashup/'" />

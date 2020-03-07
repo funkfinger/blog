@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2015/08/31/getting-my-avr-dragon-to-talk-to-the-arduino-ide/'" />

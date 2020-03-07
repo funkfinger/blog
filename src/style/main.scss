@@ -114,6 +114,9 @@ html {
       background-color: white;
       img {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
       }
       .single-post-body {
         padding: 3em;
@@ -125,6 +128,7 @@ html {
         }
       }
       p > code,
+      li > code,
       h1 > code,
       h2 > code,
       h3 > code,

@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0;URL='/2016/11/16/dipping-a-toe-in-the-amazon-lambda-waters/'" />
