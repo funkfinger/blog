@@ -9,8 +9,9 @@ import useAllPosts from '../data/useAllPostsQuery';
 const IndexPage = () => {
   const data = useAllPosts();
   const postArray = data.allPostsQuery.edges;
-  const posts = postArray.map(({ node }) => (
+  const posts = postArray.map(({ node }, i) => (
     <PostExcerpt
+      first={i === 0}
       key={node.fields.slug}
       title={node.frontmatter.title}
       slug={node.fields.slug}

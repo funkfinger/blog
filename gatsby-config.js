@@ -9,6 +9,14 @@ module.exports = {
     keywords: ['code', 'electronics', 'tinker'],
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['IBM Plex Mono', 'Antic Slab', 'Dosis:800&display=swap'],
+        },
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-mdx',

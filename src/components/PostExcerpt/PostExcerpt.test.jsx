@@ -8,6 +8,15 @@ const testComponent = (
   </PostExcerpt>
 );
 
+test('it has designatin for first component', () => {
+  const { container } = render(
+    <PostExcerpt title="t" slug="s" first>
+      body
+    </PostExcerpt>
+  );
+  expect(container.querySelector('.first-post-in-list')).toBeInTheDocument();
+});
+
 test('it has a link to post', () => {
   const { getByText } = render(testComponent);
   expect(getByText(/more/i)).toBeInTheDocument();

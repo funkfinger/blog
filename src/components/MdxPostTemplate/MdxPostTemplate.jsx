@@ -10,11 +10,13 @@ export const PageTemplatePure = ({ heroImage, title, date, body }) => {
     <HeroImage img={heroImage.childImageSharp.fluid} />
   ) : null;
   return (
-    <div>
+    <div className="single-post">
       {img}
-      <h3>{title}</h3>
-      <div className="post-date">{date}</div>
-      <MDXRenderer>{body}</MDXRenderer>
+      <div className="single-post-body">
+        <h1>{title}</h1>
+        <div className="post-date">{date}</div>
+        <MDXRenderer>{body}</MDXRenderer>
+      </div>
     </div>
   );
 };
@@ -73,7 +75,7 @@ export const pageQuery = graphql`
         title
         heroImage {
           childImageSharp {
-            fluid(maxWidth: 840) {
+            fluid(maxWidth: 1300) {
               ...GatsbyImageSharpFluid
             }
           }
