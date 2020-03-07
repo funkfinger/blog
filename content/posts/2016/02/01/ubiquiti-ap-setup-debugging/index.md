@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Ubiquiti AP Setup Debugging"
+title: 'Ubiquiti AP Setup Debugging'
 comments: true
 date: 2016-02-01 11:15:30
+obsolete: true
 ---
 
 While trying out a Ubiquiti wifi solution, I ran into one AP not getting installed correctly. It was showing as either `disconnected` or `pending authorization` - the latter I think means that it was trying to connect to a wifi netowork rather than the ethernet network it was plugged into.

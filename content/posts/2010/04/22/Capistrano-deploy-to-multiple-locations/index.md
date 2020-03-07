@@ -10,6 +10,7 @@ tags:
   - production
   - recipe
   - stage
+obsolete: true
 ---
 
 Pretty simple, but wanted to log here so I can look this up in the future...

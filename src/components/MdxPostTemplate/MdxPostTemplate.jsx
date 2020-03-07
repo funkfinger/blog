@@ -5,12 +5,18 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import HeroImage from '../HeroImage/HeroImage';
 
-export const PageTemplatePure = ({ heroImage, title, date, body }) => {
+export const PageTemplatePure = ({
+  heroImage,
+  title,
+  date,
+  body,
+  obsolete,
+}) => {
   const img = heroImage ? (
     <HeroImage img={heroImage.childImageSharp.fluid} />
   ) : null;
   return (
-    <div className="single-post">
+    <div className={`single-post${obsolete ? ' obsolete' : ''}`}>
       {img}
       <div className="single-post-body">
         <h1>{title}</h1>
@@ -28,6 +34,7 @@ PageTemplatePure.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
   body: PropTypes.string,
+  obsolete: PropTypes.bool,
 };
 
 PageTemplatePure.defaultProps = {
@@ -35,12 +42,13 @@ PageTemplatePure.defaultProps = {
   title: '',
   date: '',
   body: '',
+  obsolete: false,
 };
 
 const PageTemplate = ({
   data: {
     mdxPostBySlugQuery: {
-      frontmatter: { heroImage, title, date },
+      frontmatter: { heroImage, title, date, obsolete },
       body,
     },
   },
@@ -50,6 +58,7 @@ const PageTemplate = ({
     heroImage={heroImage}
     title={title}
     date={date}
+    obsolete={obsolete}
   />
 );
 
@@ -58,6 +67,7 @@ PageTemplate.propTypes = {
     mdxPostBySlugQuery: PropTypes.shape({
       body: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
+        obsolete: PropTypes.bool,
         heroImage: PropTypes.object,
         title: PropTypes.string,
         date: PropTypes.string,
@@ -71,6 +81,7 @@ export const pageQuery = graphql`
     mdxPostBySlugQuery: mdx(fields: { slug: { eq: $slug } }) {
       body
       frontmatter {
+        obsolete
         date(formatString: "MMMM DD, YYYY")
         title
         heroImage {

@@ -8,6 +8,7 @@ tags:
   - code
   - dumb
   - test
+obsolete: true
 ---
 
 Check that you didn't copy / paste / <strong>didn't change</strong> the test class definition line.

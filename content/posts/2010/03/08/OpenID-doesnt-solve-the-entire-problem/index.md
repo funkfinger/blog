@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenID doesn't solve the entire problem...
-date: "2010-03-09"
+date: '2010-03-09'
 tags:
   - charit
   - code
@@ -12,6 +12,7 @@ tags:
   - oauth
   - openid
   - twitter
+obsolete: true
 ---
 
 So it looks like I have to create the whole user model anyway. Blast.

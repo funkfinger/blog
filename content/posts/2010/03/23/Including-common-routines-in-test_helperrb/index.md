@@ -9,6 +9,7 @@ tags:
   - testunit
   - testing
   - test_helper
+obsolete: true
 ---
 
 I should have done this earlier. To do a number of tests, I have to repeat the same actions like create a user, log a user in, etc. I was putting these actions at the top of each test file, but have wised up and moved them to the `test_helper.rb` file. Here's how that looks now:

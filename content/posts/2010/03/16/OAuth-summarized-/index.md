@@ -14,6 +14,7 @@ tags:
   - session
   - sinatra
   - user
+obsolete: true
 ---
 
 <h3>Application Scope</h3>

@@ -4,6 +4,7 @@ title: 'Update to using an ATtiny85 in a Similar Way To An Adafruit Trinket - sp
 comments: true
 date: 2015-09-15 20:35:28
 categories: [attiny85, trinket, adafruit, avr, fuses, neopixel]
+obsolete: true
 ---
 
 I'm continuing to try and 'cheap-ify' my per effect cost for my Halloween decorations. I ran into some issues last night trying to get an Arduino sketch that used the Adafruit Neopixel library and ran on a Trinket to run on a straight ATtiny85. The solution was to select the chip in the Arduino IDE and using an AVR programmer, burn the 'bootloader'.

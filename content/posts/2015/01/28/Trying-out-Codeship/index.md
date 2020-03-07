@@ -3,6 +3,7 @@ layout: post
 title: Trying out Codeship
 date: '2015-01-29'
 tags: []
+obsolete: true
 ---
 
 Stumbled across <a href="https://codeship.com/">Codeship</a> and decided to give it a shot. Works a little similar to deploying to <a href="http://heroku.com">Heroku</a> which I'm already doing, so it wasn't too bad to figure out.

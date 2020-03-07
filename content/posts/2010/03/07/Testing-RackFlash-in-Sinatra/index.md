@@ -9,6 +9,7 @@ tags:
   - rack
   - ruby
   - sinatra
+obsolete: true
 ---
 
 Here's a slightly dumb way to test Rack::Flash in a Sinatra app...

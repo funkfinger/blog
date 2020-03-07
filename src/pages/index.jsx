@@ -16,6 +16,7 @@ const IndexPage = () => {
       title={node.frontmatter.title}
       slug={node.fields.slug}
       img={node.frontmatter.heroImage}
+      obsolete={node.frontmatter.obsolete}
     >
       {node.excerpt}
     </PostExcerpt>

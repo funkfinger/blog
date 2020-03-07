@@ -7,6 +7,7 @@ tags:
   - code
   - test
   - testing
+obsolete: true
 ---
 
 Looking for a reason that autotest is skipping some of my test files....

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "npm: One tool to rule them all..."
-date: "2015-02-02"
+title: 'npm: One tool to rule them all...'
+date: '2015-02-02'
 tags:
   - code
+obsolete: true
 ---
 
 After trying to sort out what a toolset should be for standard JS / HTML / possibly Node development, I'm narrowing on just using npm. Here's the reference material that got me to this place:

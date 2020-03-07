@@ -10,6 +10,7 @@ tags:
   - make
   - makefile
   - usbtiny
+obsolete: true
 ---
 
 This is what I'm using as a Makefile - based on what was included in a downloaded XCode template project - Can't remember where I downloaded the starting point, but thanks...

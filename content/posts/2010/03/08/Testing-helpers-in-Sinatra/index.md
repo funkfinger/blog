@@ -10,6 +10,7 @@ tags:
   - sinatra
   - test
   - testing
+obsolete: true
 ---
 
 How do you test your helper methods in a Sinatra::Base app?

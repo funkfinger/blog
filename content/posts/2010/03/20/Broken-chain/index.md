@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Broken chain...
-date: "2010-03-21"
+date: '2010-03-21'
 tags: []
+obsolete: true
 ---
 
 Well, I've been working on this thing, but have not making the kind of progress I would like. I blame this on a few things, but mainly we've been social (which isn't really a bad thing)...

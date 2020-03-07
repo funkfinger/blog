@@ -9,6 +9,7 @@ tags:
   - pony
   - ruby
   - test
+obsolete: true
 ---
 
 Email is going to be used to activate an account, and I'm leaning towards using the Pony gem to simplify the creations and sending.

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Using Platformio with ESP8266 Arduino 2.1.0-rc2 release candidate"
+title: 'Using Platformio with ESP8266 Arduino 2.1.0-rc2 release candidate'
 comments: true
 date: 2016-01-29 00:18:25
 categories: [arduino, esp8266, platformio]
+obsolete: true
 ---
 
 In order to get Platformio to build a project based on ESP8266 release candidate, I had to do the following - [basically these instructions](https://github.com/platformio/platformio/issues/401#issuecomment-166958952):

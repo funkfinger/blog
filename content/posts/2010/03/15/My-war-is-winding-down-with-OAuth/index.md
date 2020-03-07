@@ -11,6 +11,7 @@ tags:
   - provider
   - request-token
   - token
+obsolete: true
 ---
 
 Summary of what's going on with OAuth:

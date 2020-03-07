@@ -10,6 +10,7 @@ tags:
   - json
   - post
   - test
+obsolete: true
 ---
 
 ```

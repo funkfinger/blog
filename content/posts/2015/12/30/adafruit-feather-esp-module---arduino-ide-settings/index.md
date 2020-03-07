@@ -4,6 +4,7 @@ title: 'Adafruit Feather ESP8266 module - Arduino IDE settings'
 comments: true
 date: 2015-12-30 11:18:33
 categories: [arduino, esp8266, ide]
+obsolete: true
 ---
 
 These are the settings that got me up and going- before this I was getting `warning: espcomm_sync failed error: espcomm_open failed` error

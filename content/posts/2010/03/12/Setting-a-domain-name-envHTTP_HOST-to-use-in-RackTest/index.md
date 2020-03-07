@@ -10,6 +10,7 @@ tags:
   - rack
   - ruby
   - test
+obsolete: true
 ---
 
 This may not be the best way to do this, but this is what I used at the top of my test file so that a helper method has a value for Rack's env['HTTP_HOST']:

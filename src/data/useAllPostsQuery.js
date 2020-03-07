@@ -14,6 +14,7 @@ const useAllPosts = () => {
               slug
             }
             frontmatter {
+              obsolete
               date(formatString: "MMMM DD, YYYY")
               title
               heroImage {

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: More on OpenID
-date: "2010-03-11"
+date: '2010-03-11'
 tags:
   - api
   - code
@@ -12,6 +12,7 @@ tags:
   - sreg
   - user-creation
   - user-model
+obsolete: true
 ---
 
 I'm now working on user creation process...

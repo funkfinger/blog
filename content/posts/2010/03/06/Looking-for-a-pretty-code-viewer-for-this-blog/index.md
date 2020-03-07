@@ -8,6 +8,7 @@ tags:
   - geshi
   - javascript
   - ruby
+obsolete: true
 ---
 
 <b>\* Updated: Working thanks to <a href='http://wordpress.org/extend/plugins/wp-syntax/'>this</a> WP plugin. </b>

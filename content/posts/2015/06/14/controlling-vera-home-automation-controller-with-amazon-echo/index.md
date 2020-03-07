@@ -11,6 +11,7 @@ tags:
   - raspberry pi
   - phillips hue
   - z-wave
+obsolete: true
 ---
 
 This is all made possible by a nifty little [Java app](https://github.com/armzilla/amazon-echo-ha-bridge) written by [armzilla](https://github.com/armzilla). Here's a quick explanation of the setup:

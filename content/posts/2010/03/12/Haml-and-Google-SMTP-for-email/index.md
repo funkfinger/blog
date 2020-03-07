@@ -11,6 +11,7 @@ tags:
   - ruby
   - smtp
   - template
+obsolete: true
 ---
 
 I first thought that I would have to use ERB to render non-HTML-like templates. Not true. Haml let you do a `:plain` filter which is pretty much the same as using ERB templates.

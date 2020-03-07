@@ -10,6 +10,7 @@ tags:
   - ruby
   - sinatra
   - url
+obsolete: true
 ---
 
 This is simple, but I'm dumping it here anyway... I'd like to use the Twitter model of account access: <strong>http://example.com/USERNAME</strong>

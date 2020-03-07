@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "PlatformIO Investigation"
+title: 'PlatformIO Investigation'
 comments: true
 date: 2015-09-30 23:52:26
 categories: [platformio, arduino, avr, es8266]
+obsolete: true
 ---
 
 While looking around for a good [library to parse JSON](https://github.com/bblanchon/ArduinoJson) on an Arduino, I bumped into [PlatformIO](http://platformio.org/). This seems to address a problem I've been struggling with – library / board management.
@@ -15,7 +16,6 @@ With all that, I was able to build and deploy the 'blink' code on a Arduino Uno 
      mkdir platformio_blink
      cd platformio_blink
      platformio init --board=uno
-
 
 and then added a `main.cpp` file to the `platformio_blink/src` folder
 

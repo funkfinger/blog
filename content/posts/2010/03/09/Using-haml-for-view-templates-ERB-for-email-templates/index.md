@@ -10,6 +10,7 @@ tags:
   - mustache
   - ruby
   - sinatra
+obsolete: true
 ---
 
 and I'm not sure how I feel about this. Maybe I should use <strong>`<a href="http://github.com/defunkt/mustache">Mustache</a>`</strong> for tempting because this whole thing is for moustaches...

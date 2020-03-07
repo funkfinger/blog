@@ -8,6 +8,7 @@ tags:
   - ruby
   - sinatra
   - test
+obsolete: true
 ---
 
 ```ruby

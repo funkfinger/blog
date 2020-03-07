@@ -4,10 +4,13 @@ import PropTypes from 'prop-types';
 
 import HeroImage from '../HeroImage/HeroImage';
 
-const PostExcerpt = ({ title, children, img, slug, first }) => {
+const PostExcerpt = ({ title, children, img, slug, first, obsolete }) => {
   const i = img ? <HeroImage img={img.childImageSharp.fluid} /> : null;
+  const c = `post-excerpt${first ? ' first-post-in-list' : ''}${
+    obsolete ? ' obsolete' : ''
+  }`;
   return (
-    <div className={`post-excerpt${first ? ' first-post-in-list' : ''}`}>
+    <div className={c}>
       <Link to={slug}>{i}</Link>
       <div className="post-excerpt-text">
         <Link to={slug}>
@@ -24,6 +27,7 @@ const PostExcerpt = ({ title, children, img, slug, first }) => {
 
 PostExcerpt.propTypes = {
   first: PropTypes.bool,
+  obsolete: PropTypes.bool,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
@@ -46,6 +50,7 @@ PostExcerpt.propTypes = {
 
 PostExcerpt.defaultProps = {
   first: false,
+  obsolete: false,
   img: null,
 };
 

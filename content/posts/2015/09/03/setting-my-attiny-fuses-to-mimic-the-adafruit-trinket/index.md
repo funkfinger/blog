@@ -4,6 +4,7 @@ title: 'Setting My ATtiny85 Fuses To Mimic The Adafruit Trinket'
 comments: true
 date: 2015-09-04 06:17:54
 categories: [attiny85, trinket, avr, fuses]
+obsolete: true
 ---
 
 To get a [Adafruit Trinket](https://www.adafruit.com/products/2000) Arduino sketch running on a straight-up ATtiny85, I did the following:

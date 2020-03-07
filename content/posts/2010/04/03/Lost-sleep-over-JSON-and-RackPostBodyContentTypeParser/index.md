@@ -13,6 +13,7 @@ tags:
   - regex
   - sinatra
   - test
+obsolete: true
 ---
 
 I've been fighting this issue the last couple nights. I wrote earlier about how `Rack::PostBodyContentTypeParser` can automagically turn a posted JSON object into a Rack / Sinatra params hash. So, I wrote some tests to make sure this was the case and moved on. Well, it turns out in real life things weren't working and I couldn't figure out why. Everything looked cool, but the hash wasn't getting set when I did an AJAX call in the browser - everything was empty. I looked at everything, from the server, to the JS library, to the browser, to setting different content types in `prototype.js` etc... UGH!

@@ -3,7 +3,7 @@ $blockquote-color: #666;
 $body-color: #10c600; //#333;
 $background-color: #000000ac; // #f3f3f3;
 $post-color: #555;
-$heading-color: #6c5300;
+$heading-color: #a57013;
 
 /* reset */
 * {
@@ -109,6 +109,16 @@ html {
         }
       }
     }
+    .post-excerpt.obsolete {
+      background-image: url('../../content/images/obsolete-tag.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+    .single-post.obsolete {
+      background-image: url('../../content/images/obsolete-tag-top.png');
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
     .single-post {
       border: 1px #000 solid;
       background-color: white;
@@ -127,6 +137,7 @@ html {
           }
         }
       }
+      a > code,
       p > code,
       li > code,
       h1 > code,

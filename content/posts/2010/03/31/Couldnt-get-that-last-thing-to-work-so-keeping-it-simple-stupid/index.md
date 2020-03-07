@@ -9,6 +9,7 @@ tags:
   - format
   - mime-type
   - sinatra
+obsolete: true
 ---
 
 This could undoubtedly be more elegant, but it's late and I want it to work now. May take another stab at it later...

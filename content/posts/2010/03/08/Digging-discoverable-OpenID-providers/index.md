@@ -7,6 +7,7 @@ tags:
   - code
   - openid
   - url
+obsolete: true
 ---
 
 Here's a list of big-time OpenID providers that are discoverable. This means you don't need an exact URL, which is cool...

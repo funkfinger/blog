@@ -13,6 +13,7 @@ tags:
   - s3
   - s3object
   - upload
+obsolete: true
 ---
 
 working on storing files to Amazon's S3 web service. Here's what I've come up with so far:

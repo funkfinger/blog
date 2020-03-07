@@ -8,6 +8,15 @@ const testComponent = (
   </PostExcerpt>
 );
 
+test('it has obsolete classname', () => {
+  const { container } = render(
+    <PostExcerpt title="t" slug="s" obsolete>
+      body
+    </PostExcerpt>
+  );
+  expect(container.querySelector('.obsolete')).toBeInTheDocument();
+});
+
 test('it has designatin for first component', () => {
   const { container } = render(
     <PostExcerpt title="t" slug="s" first>

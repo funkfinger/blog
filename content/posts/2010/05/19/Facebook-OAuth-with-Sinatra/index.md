@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook OAuth with Sinatra
-date: "2010-05-20"
+date: '2010-05-20'
 tags:
   - access-token
   - api
@@ -12,6 +12,7 @@ tags:
   - graph-facebook-com
   - json
   - oauth
+obsolete: true
 ---
 
 This <strong>MOSTLY</strong> is working, so, here's what I found when trying to connect to Facebook with OAuth. It needs some <strong>serious refactoring</strong> because a lot of this was done in an "investigative" trial and error way. It also looks like Facebook have improved their <a href='http://developers.facebook.com/docs/api'>docs on this</a> since I was first looking at them...
@@ -36,7 +37,7 @@ client_id="client_id=##CLIENT ID##"
 client_secret="client_secret=## CLIENT SECRET ##"
 code="code=#{URI.escape(params['code'])}"
 redirect_uri="redirect_uri=http://example.org/#{@blog.url_name}/facebook/oauth/callback"
-      
+
 url="#{url}?#{client_id}&#{client_secret}&#{code}&#{redirect_uri}"
 begin
   res=open(url)
@@ -77,5 +78,4 @@ redirect "/#{@blog.url_name}/"
 
 Where `##CLIENT ID##` = your <strong>Application ID</strong> (mine is a 12 digit numeric value) and `## CLIENT SECRET ##` = your <strong>Application Secret</strong> (mine is a 32 digit hex value).
 
-Once you have an `access_token` you should be able to make calls to URLs like this: `
-"https://graph.facebook.com/me/?access_token=#{access_token}"`. The `/me` path is the connected user's data and I'm grabbing their Facebook ID from the returned JSON for use elsewhere.
+Once you have an `access_token` you should be able to make calls to URLs like this: `"https://graph.facebook.com/me/?access_token=#{access_token}"`. The `/me` path is the connected user's data and I'm grabbing their Facebook ID from the returned JSON for use elsewhere.
