@@ -9,6 +9,7 @@ module.exports = {
     keywords: ['code', 'electronics', 'tinker'],
   },
   plugins: [
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -17,7 +18,6 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-mdx',
       options: {

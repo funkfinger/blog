@@ -109,15 +109,10 @@ html {
         }
       }
     }
-    .post-excerpt.obsolete {
+    .obsolete {
       background-image: url('../../content/images/obsolete-tag.png');
       background-repeat: no-repeat;
       background-position: right bottom;
-    }
-    .single-post.obsolete {
-      background-image: url('../../content/images/obsolete-tag-top.png');
-      background-repeat: no-repeat;
-      background-position: right top;
     }
     .single-post {
       border: 1px #000 solid;
@@ -137,7 +132,6 @@ html {
           }
         }
       }
-      a > code,
       p > code,
       li > code,
       h1 > code,

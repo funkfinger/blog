@@ -24,7 +24,7 @@ export const wrapPageElement = ({ element, props }) => (
 );
 
 export const wrapRootElement = ({ element }) => (
-  <MDXProvider components={components}>
+  <MDXProvider components={{ ...components }}>
     <HelmetProvider>{element}</HelmetProvider>
   </MDXProvider>
 );
