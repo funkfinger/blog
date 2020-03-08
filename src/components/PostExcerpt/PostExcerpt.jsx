@@ -10,7 +10,7 @@ const PostExcerpt = ({ title, children, img, slug, first, obsolete }) => {
     obsolete ? ' obsolete' : ''
   }`;
   return (
-    <div className={c}>
+    <article className={c}>
       <Link to={slug}>{i}</Link>
       <div className="post-excerpt-text">
         <Link to={slug}>
@@ -21,7 +21,7 @@ const PostExcerpt = ({ title, children, img, slug, first, obsolete }) => {
           <div className="more-link">more...</div>
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 

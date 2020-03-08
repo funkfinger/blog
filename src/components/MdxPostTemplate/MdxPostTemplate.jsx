@@ -16,14 +16,14 @@ export const PageTemplatePure = ({
     <HeroImage img={heroImage.childImageSharp.fluid} />
   ) : null;
   return (
-    <div className={`single-post${obsolete ? ' obsolete' : ''}`}>
+    <article className={`single-post${obsolete ? ' obsolete' : ''}`}>
       {img}
       <div className="single-post-body">
         <h1>{title}</h1>
         <div className="post-date">{date}</div>
         <MDXRenderer>{body}</MDXRenderer>
       </div>
-    </div>
+    </article>
   );
 };
 
