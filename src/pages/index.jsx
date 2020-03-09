@@ -21,7 +21,7 @@ const IndexPage = () => {
       {node.excerpt}
     </PostExcerpt>
   ));
-  return posts;
+  return <>{posts}</>;
 };
 
 export default IndexPage;
