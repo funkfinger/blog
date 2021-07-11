@@ -28,8 +28,7 @@ test('it renders children', () => {
 
 test('it sets a title from useSeo query', async () => {
   render(testComponent);
-  await waitForDomChange();
-  expect(document.title).toEqual('site title...');
+  await waitFor(() => expect(document.title).toEqual('site title...'));
 });
 
 test('it renders', () => {

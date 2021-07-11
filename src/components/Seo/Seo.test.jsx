@@ -1,6 +1,8 @@
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 
+import { waitFor } from '@testing-library/react';
+
 import Seo from './Seo';
 
 const testComponent = (
@@ -15,14 +17,12 @@ test('it can set the title with props', async () => {
       <Seo pageTitle="blah" />
     </HelmetProvider>
   );
-  await waitForDomChange();
-  expect(document.title).toEqual('blah | site title...');
+  await waitFor(() => expect(document.title).toEqual('blah | site title...'));
 });
 
 test('it sets a title from useSeo query', async () => {
   render(testComponent);
-  await waitForDomChange();
-  expect(document.title).toEqual('site title...');
+  await waitFor(() => expect(document.title).toEqual('site title...'));
 });
 
 test('it renders', () => {
