@@ -6,12 +6,12 @@ import {
   render,
   fireEvent,
   waitForElement,
-  waitForDomChange,
+  waitFor,
 } from '@testing-library/react';
 
 global.render = render;
 global.fireEvent = fireEvent;
 global.waitForElement = waitForElement;
-global.waitForDomChange = waitForDomChange;
+global.waitFor = waitFor;
 
 // export * from '@testing-library/jest-dom/extend-expect';

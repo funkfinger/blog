@@ -15,14 +15,15 @@ test('it can set the title with props', async () => {
       <Seo pageTitle="blah" />
     </HelmetProvider>
   );
-  await waitForDomChange();
-  expect(document.title).toEqual('blah | site title...');
+  await waitFor(() => expect(document.title).toEqual('blah | site title...'));
+  // waitForDomChange();
+  
 });
 
 test('it sets a title from useSeo query', async () => {
   render(testComponent);
-  await waitForDomChange();
-  expect(document.title).toEqual('site title...');
+  // await waitForDomChange();
+  await waitFor(() => expect(document.title).toEqual('site title...'));
 });
 
 test('it renders', () => {
