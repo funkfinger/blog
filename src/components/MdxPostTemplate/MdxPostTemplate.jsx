@@ -68,7 +68,7 @@ PageTemplate.propTypes = {
       body: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
         obsolete: PropTypes.bool,
-        heroImage: PropTypes.object,
+        heroImage: PropTypes.object, // eslint-disable-line
         title: PropTypes.string,
         date: PropTypes.string,
       }),

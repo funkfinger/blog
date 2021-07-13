@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-const useAllPosts = () => {
-  return useStaticQuery(graphql`
+const useAllPosts = () =>
+  useStaticQuery(graphql`
     query AllPostsQuery {
       allPostsQuery: allMdx(
         filter: { fields: { slug: { regex: "/^/[0-9]/" } } }
@@ -30,6 +30,5 @@ const useAllPosts = () => {
       }
     }
   `);
-};
 
 export default useAllPosts;

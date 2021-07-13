@@ -21,5 +21,5 @@ module.exports = {
     fireEvent: 'readonly',
     waitForDomChange: 'readonly',
   },
-  extends: ['airbnb', 'airbnb/hooks', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
 };

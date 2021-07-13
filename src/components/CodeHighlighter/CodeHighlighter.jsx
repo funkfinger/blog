@@ -4,13 +4,11 @@ import PropTypes from 'prop-types';
 
 import style from '../../vendor/atom-one-dark';
 
-const CodeHighlighter = ({ children, language }) => {
-  return (
-    <SyntaxHighlighter language={language} style={style}>
-      {children}
-    </SyntaxHighlighter>
-  );
-};
+const CodeHighlighter = ({ children, language }) => (
+  <SyntaxHighlighter language={language} style={style}>
+    {children}
+  </SyntaxHighlighter>
+);
 
 CodeHighlighter.propTypes = {
   children: PropTypes.node.isRequired,
