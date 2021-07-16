@@ -5,7 +5,7 @@ import Gist from 'react-gist';
 
 import YouTubeVideo from '../YouTubeVideo/YouTubeVideo';
 
-import { PageTemplatePure } from './MdxPostTemplate';
+import PageTemplatePure from './PageTemplatePure';
 import {
   mdxPostBySlugQuery,
   bodyWithYoutube,
