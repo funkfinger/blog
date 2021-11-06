@@ -1,9 +1,11 @@
 /* variables... */
 $blockquote-color: #666;
 $body-color: #10c600; //#333;
-$background-color: #000000ac; // #f3f3f3;
+// $background-color: #000000ac; // #f3f3f3;
+$background-color: #f3f3f3;
 $post-color: #555;
 $heading-color: #666159;
+$title-heading-color: #90887b;
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
 
@@ -15,7 +17,7 @@ $heading-color: #666159;
 html {
   body {
     margin: 0;
-    // background-color: $background-color;
+    background-color: $background-color;
     color: $body-color;
     // background-image: url('../../content/images/tile3.png');
     // background-repeat: repeat;
@@ -36,7 +38,7 @@ html {
   h6 {
     font-family: 'Pacifico', sans-serif;
     line-height: 100%;
-    color: $heading-color;
+    color: $title-heading-color;
     code {
       font-size: 0.8em;
     }
@@ -58,6 +60,9 @@ html {
   header {
     padding: 0 3em;
     text-align: center;
+    h1 {
+      color: $heading-color;
+    }
     a {
       text-decoration: none;
       color: $body-color;
@@ -67,7 +72,7 @@ html {
     }
     h2 {
       opacity: 0.5;
-      font-size: 0.8em;
+      font-size: 1.2em;
       margin: 0;
     }
   }
@@ -95,7 +100,7 @@ html {
     // background-color: $background-color;
     width: 100%;
     height: 100%;
-    max-width: 1300px;
+    max-width: 800px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -103,7 +108,7 @@ html {
     flex-direction: column;
     .post-excerpt {
       // border: 1px #000 solid;
-      // background-color: #fff;
+      background-color: #fff;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25),
         0 6px 20px 0 rgba(0, 0, 0, 0.25);
       .post-excerpt-text {
@@ -116,6 +121,7 @@ html {
         }
         h3 {
           font-size: 1.4em;
+          // color: lightslategray;
         }
       }
     }
@@ -142,6 +148,19 @@ html {
           }
         }
       }
+      .post-date {
+        font-size: 0.8em;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: $title-heading-color;
+      }
+
       p > code,
       li > code,
       h1 > code,
