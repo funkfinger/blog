@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import HeroImage from '../HeroImage/HeroImage';
 
 const PostExcerpt = ({ title, children, img, slug, first, obsolete }) => {
-  const i = img ? <HeroImage img={img.childImageSharp.fluid} /> : null;
+  const i = img ? (
+    <HeroImage img={img.childImageSharp.fluid} className="hero" />
+  ) : null;
   const c = `post-excerpt${first ? ' first-post-in-list' : ''}${
     obsolete ? ' obsolete' : ''
   }`;

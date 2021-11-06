@@ -3,7 +3,11 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const HeroImage = ({ img }) =>
-  img ? <Img fluid={img} /> : <div className="hero-image-holder" />;
+  img ? (
+    <Img fluid={img} className="hero" />
+  ) : (
+    <div className="hero-image-holder" />
+  );
 
 HeroImage.propTypes = { img: PropTypes.shape({}) };
 

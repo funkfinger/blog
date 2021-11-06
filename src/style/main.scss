@@ -3,7 +3,9 @@ $blockquote-color: #666;
 $body-color: #10c600; //#333;
 $background-color: #000000ac; // #f3f3f3;
 $post-color: #555;
-$heading-color: #a57013;
+$heading-color: #666159;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
 
 /* reset */
 * {
@@ -13,12 +15,13 @@ $heading-color: #a57013;
 html {
   body {
     margin: 0;
-    background-color: $background-color;
+    // background-color: $background-color;
     color: $body-color;
-    background-image: url('../../content/images/tile3.png');
-    background-repeat: repeat;
+    // background-image: url('../../content/images/tile3.png');
+    // background-repeat: repeat;
     // font-family: 'Hepta Slab', serif;
-    font-family: 'Antic Slab', serif;
+    // font-family: 'Antic Slab', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     @media screen and (max-width: 600px) {
       font-size: 1em;
@@ -31,13 +34,13 @@ html {
   h4,
   h5,
   h6 {
-    font-family: 'Dosis', sans-serif;
-    font-variation-settings: 'wght' 800;
-    font-weight: 0.8em;
+    font-family: 'Pacifico', sans-serif;
+    line-height: 100%;
     color: $heading-color;
     code {
       font-size: 0.8em;
     }
+    font-weight: normal;
   }
 
   code {
@@ -59,33 +62,37 @@ html {
       text-decoration: none;
       color: $body-color;
     }
-    h1,
-    h2 {
-      margin: 0;
+    h1 {
+      margin-bottom: 0.4em;
     }
     h2 {
-      color: $body-color;
       opacity: 0.5;
+      font-size: 0.8em;
+      margin: 0;
     }
   }
 
   main {
     color: $post-color;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-gap: 2em;
     padding: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    @media screen and (max-width: 320px) {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
+    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    // @media screen and (max-width: 320px) {
+    //   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    // }
     p,
     blockquote {
       line-height: 1.5em;
     }
+    article {
+      justify-self: stretch;
+    }
   }
 
   .layout {
-    background-color: $background-color;
+    // background-color: $background-color;
     width: 100%;
     height: 100%;
     max-width: 1300px;
@@ -95,8 +102,8 @@ html {
     display: flexbox;
     flex-direction: column;
     .post-excerpt {
-      border: 1px #000 solid;
-      background-color: #fff;
+      // border: 1px #000 solid;
+      // background-color: #fff;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25),
         0 6px 20px 0 rgba(0, 0, 0, 0.25);
       .post-excerpt-text {
@@ -106,6 +113,9 @@ html {
         }
         .more-link {
           padding-top: 1em;
+        }
+        h3 {
+          font-size: 1.4em;
         }
       }
     }
@@ -174,5 +184,9 @@ html {
       padding: 1em;
       padding-left: 0;
     }
+  }
+
+  .hero {
+    // border: 10px #000 solid;
   }
 }

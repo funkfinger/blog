@@ -14,7 +14,13 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['IBM Plex Mono', 'Antic Slab', 'Dosis:800&display=swap'],
+          families: [
+            // 'Dancing Script',
+            'Pacifico&display=swap',
+            'IBM Plex Mono',
+            // 'Antic Slab',
+            'Dosis:800&display=swap',
+          ],
         },
       },
     },
