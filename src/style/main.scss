@@ -135,7 +135,9 @@ html {
       background-position: right bottom;
     }
     .single-post {
-      border: 1px #000 solid;
+      // border: 1px #000 solid;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25),
+        0 6px 20px 0 rgba(0, 0, 0, 0.25);
       background-color: white;
       img {
         max-width: 100%;
